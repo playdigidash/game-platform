@@ -1,0 +1,30 @@
+{
+  "name": "@lidvizion/react-mui-calendar",
+  "version": "0.0.1",
+  "module": "./index.js",
+  "main": "./index.js",
+  "type": "module",
+  "types": "./index.d.ts",
+  "dependencies": {},
+  "peerDependencies": {
+    "@lidvizion/commonlib": "0.0.1",
+    "react": "^18.3.1",
+    "@mui/material": "^5.10.8",
+    "@mui/icons-material": "^6.1.9",
+    "react-i18next": "^12.2.0",
+    "react-google-calendar-api": "^2.2.2",
+    "moment": "^2.29.4",
+    "react-icalendar-link": "^3.0.2",
+    "mobx": "^6.6.1",
+    "uuid": "^8.3.2",
+    "date-holidays": "^3.19.0",
+    "mobx-react": "^7.5.2",
+    "react-color": "^2.19.3",
+    "@mui/x-date-pickers": "^5.0.12",
+    "react-helmet": "^6.1.0",
+    "@mui/lab": "^5.0.0-alpha.102",
+    "lodash": "^4.17.21",
+    "react-router-dom": "^6.26.1",
+    "lexical": "^0.27.2"
+  }
+}

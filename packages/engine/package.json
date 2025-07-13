@@ -1,0 +1,59 @@
+{
+  "name": "@digidash/core",
+  "version": "1.0.0",
+  "description": "Open source 3D trivia game engine - create educational games with Three.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "BSL-1.1",
+  "keywords": [
+    "digidash",
+    "trivia",
+    "games",
+    "education",
+    "three.js",
+    "react",
+    "3d"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
+  "dependencies": {
+    "@digidash/data": "^1.0.0",
+    "@react-three/fiber": "^8.15.0",
+    "@react-three/drei": "^9.88.0",
+    "@react-three/rapier": "^1.4.0",
+    "three": "^0.158.0",
+    "mobx": "^6.10.0",
+    "mobx-react": "^9.0.0",
+    "@mui/material": "^5.14.0",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "react-router-dom": "^6.16.0",
+    "gsap": "^3.12.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/three": "^0.158.0",
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digidash/digidash-core.git",
+    "directory": "packages/engine"
+  },
+  "bugs": {
+    "url": "https://github.com/digidash/digidash-core/issues"
+  },
+  "homepage": "https://github.com/digidash/digidash-core#readme"
+}

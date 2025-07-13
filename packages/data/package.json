@@ -1,0 +1,41 @@
+{
+  "name": "@digidash/data",
+  "version": "1.0.0",
+  "description": "Data abstraction layer for Digi Dash games - replaces MongoDB with local storage",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "BSL-1.1",
+  "keywords": [
+    "digidash",
+    "trivia",
+    "games",
+    "education",
+    "data-provider"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
+  "dependencies": {
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digidash/digidash-core.git",
+    "directory": "packages/data"
+  },
+  "bugs": {
+    "url": "https://github.com/digidash/digidash-core/issues"
+  },
+  "homepage": "https://github.com/digidash/digidash-core#readme"
+}

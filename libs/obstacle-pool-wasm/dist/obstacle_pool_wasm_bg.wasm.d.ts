@@ -1,0 +1,32 @@
+/* tslint:disable */
+/* eslint-disable */
+export const memory: WebAssembly.Memory;
+export const __wbg_vector3_free: (a: number, b: number) => void;
+export const __wbg_get_vector3_x: (a: number) => number;
+export const __wbg_set_vector3_x: (a: number, b: number) => void;
+export const __wbg_get_vector3_y: (a: number) => number;
+export const __wbg_set_vector3_y: (a: number, b: number) => void;
+export const __wbg_get_vector3_z: (a: number) => number;
+export const __wbg_set_vector3_z: (a: number, b: number) => void;
+export const vector3_new: (a: number, b: number, c: number) => number;
+export const vector3_set: (a: number, b: number, c: number, d: number) => void;
+export const __wbg_obstaclepool_free: (a: number, b: number) => void;
+export const obstaclepool_new: () => number;
+export const obstaclepool_add_to_pool: (a: number, b: number, c: number, d: number, e: number, f: number) => void;
+export const obstaclepool_get_instance: (a: number, b: number) => any;
+export const obstaclepool_return_to_pool: (a: number, b: number) => number;
+export const obstaclepool_update_position: (a: number, b: number, c: number, d: number, e: number) => number;
+export const obstaclepool_update_rotation: (a: number, b: number, c: number, d: number, e: number) => number;
+export const obstaclepool_get_active_obstacles: (a: number) => any;
+export const obstaclepool_get_pool_size: (a: number, b: number) => number;
+export const obstaclepool_clear_pool: (a: number) => void;
+export const obstaclepool_get_obstacle_by_id: (a: number, b: number) => any;
+export const js_enum_to_obstacle_type: (a: number) => number;
+export const start: () => void;
+export const __wbindgen_exn_store: (a: number) => void;
+export const __externref_table_alloc: () => number;
+export const __wbindgen_export_2: WebAssembly.Table;
+export const __wbindgen_free: (a: number, b: number, c: number) => void;
+export const __wbindgen_malloc: (a: number, b: number) => number;
+export const __wbindgen_realloc: (a: number, b: number, c: number, d: number) => number;
+export const __wbindgen_start: () => void;
