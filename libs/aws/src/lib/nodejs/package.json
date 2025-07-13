@@ -1,0 +1,23 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.359.0",
+    "axios": "^1.8.2",
+    "email-validator": "^2.0.4",
+    "mongodb": "^6.0.0",
+    "twilio": "^5.6.0",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
+}

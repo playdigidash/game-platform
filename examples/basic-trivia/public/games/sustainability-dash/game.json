@@ -1,0 +1,119 @@
+{
+  "moduleId": "sustainability-dash",
+  "settings": {
+    "gTitle": "Campus Sustainability Challenge",
+    "gDesc": "Learn about sustainable practices while running through campus!",
+    "music": true,
+    "limit": 10,
+    "random": false,
+    "url": "sustainability-dash"
+  },
+  "trivia": [
+    {
+      "id": "q1",
+      "question": "What percentage of campus energy comes from renewable sources?",
+      "answers": ["25%", "50%", "75%"],
+      "correctAnswer": 2,
+      "explanation": "Our campus runs on 75% renewable energy from solar and wind installations.",
+      "source": "Campus Sustainability Report 2024",
+      "hints": ["Look for the solar panels on building rooftops", "Wind turbines generate significant power"],
+      "category": "energy"
+    },
+    {
+      "id": "q2",
+      "question": "Which material takes the longest to decompose in a landfill?",
+      "answers": ["Paper", "Plastic bottles", "Glass"],
+      "correctAnswer": 2,
+      "explanation": "Glass can take over 1 million years to decompose, but it's 100% recyclable!",
+      "source": "Environmental Protection Agency",
+      "hints": ["Think about what's made from sand", "It's completely recyclable"],
+      "category": "waste"
+    },
+    {
+      "id": "q3",
+      "question": "How much water can a single leaky faucet waste per day?",
+      "answers": ["1 gallon", "10 gallons", "50 gallons"],
+      "correctAnswer": 1,
+      "explanation": "A single dripping faucet can waste over 10 gallons per day - enough for 180 showers!",
+      "source": "Water Conservation Alliance",
+      "hints": ["More than you might think", "It adds up quickly"],
+      "category": "water"
+    },
+    {
+      "id": "q4",
+      "question": "What's the most effective way to reduce your carbon footprint on campus?",
+      "answers": ["Bike or walk to class", "Use reusable water bottles", "Turn off lights"],
+      "correctAnswer": 0,
+      "explanation": "Transportation accounts for the largest portion of student carbon emissions.",
+      "source": "Campus Carbon Study 2024",
+      "hints": ["Think about how you get around", "Uses no fossil fuels"],
+      "category": "transportation"
+    },
+    {
+      "id": "q5",
+      "question": "Which dining hall practice saves the most resources?",
+      "answers": ["Using compostable plates", "Trayless dining", "Local food sourcing"],
+      "correctAnswer": 1,
+      "explanation": "Trayless dining reduces food waste by 25% and saves water and energy from washing.",
+      "source": "Dining Services Sustainability Report",
+      "hints": ["Less food waste", "Saves water and energy"],
+      "category": "dining"
+    }
+  ],
+  "obstacles": [
+    {
+      "id": "recycling-bin",
+      "type": "dodge",
+      "modelPath": "recycling-bin.glb",
+      "name": "Recycling Bin",
+      "funFact": "Recycling one aluminum can saves enough energy to power a TV for 3 hours!"
+    },
+    {
+      "id": "solar-panel",
+      "type": "jump",
+      "modelPath": "solar-panel.glb",
+      "name": "Solar Panel",
+      "funFact": "Solar panels on campus generate enough energy to power 200 homes!"
+    },
+    {
+      "id": "compost-bin",
+      "type": "slide",
+      "modelPath": "compost-bin.glb",
+      "name": "Compost Bin",
+      "funFact": "Composting reduces methane emissions by 50% compared to landfills!"
+    }
+  ],
+  "avatars": [
+    {
+      "id": "eco-student",
+      "name": "Eco Student",
+      "modelPath": "student-eco.glb",
+      "animationPaths": ["run.glb", "jump.glb", "slide.glb"]
+    },
+    {
+      "id": "sustainability-prof",
+      "name": "Sustainability Professor",
+      "modelPath": "professor-eco.glb",
+      "animationPaths": ["run.glb", "jump.glb", "slide.glb"]
+    }
+  ],
+  "sponsors": [
+    {
+      "id": "campus-green",
+      "name": "Campus Green Initiative",
+      "imagePath": "sponsors/campus-green-logo.png",
+      "url": "https://campus.edu/sustainability"
+    }
+  ],
+  "theme": {
+    "background": {
+      "textures": {
+        "baseColor": "backgrounds/campus-quad.jpg"
+      }
+    },
+    "colors": {
+      "primary": "#4CAF50",
+      "secondary": "#8BC34A"
+    }
+  }
+}

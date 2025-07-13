@@ -1,0 +1,24 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+        - source "$HOME/.cargo/env"
+        - cargo install wasm-pack
+    build:
+      commands:
+        - yarn cache clean
+        - yarn install
+        - cd ../..
+        - pwd
+        - yarn nx run obstacle-pool-wasm:build
+        - yarn nx build game-platform --prod
+  artifacts:
+    baseDirectory: ../../dist/apps/game-platform
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+      - .cargo/**/* 

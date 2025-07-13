@@ -1,0 +1,94 @@
+{
+  "name": "game-platform",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/game-platform/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/game-platform",
+        "index": "apps/game-platform/src/index.html",
+        "baseHref": "/",
+        "main": "apps/game-platform/src/main.tsx" ,
+        "polyfills": "apps/game-platform/src/polyfills.ts",
+        "tsConfig": "apps/game-platform/tsconfig.app.json",
+        "assets": [
+          "apps/game-platform/src/favicon.ico",
+          "apps/game-platform/src/assets",
+          {
+            "glob": "**/*",
+            "input": "libs/assets/models",
+            "output": "assets/models"
+          },
+          {
+            "glob": "obstacle_pool_wasm_bg.wasm",
+            "input": "node_modules/@lidvizion/obstacle-pool-wasm/dist",
+            "output": "wasm"
+          }
+        ],
+        "styles": [],
+        "scripts": [],
+        "webpackConfig": "apps/game-platform/custom-webpack.config.js"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/game-platform/src/environments/environment.ts",
+              "with": "apps/game-platform/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "game-platform:build",
+        "hmr": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "game-platform:build:development"
+        },
+        "production": {
+          "buildTarget": "game-platform:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/game-platform/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/game-platform"],
+      "options": {
+        "jestConfig": "apps/game-platform/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

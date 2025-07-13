@@ -1,0 +1,62 @@
+[
+  {
+    "id": "launchpad",
+    "displayName": "The Launch Pad",
+    "email": "contact@thelaunchpad.org",
+    "funFacts": [
+      "First organization to implement AI in their domain.",
+      "Won the Innovators Award 2023.",
+      "Hosts an annual hackathon."
+    ],
+    "gameIds": [
+      "game_001",
+      "game_002",
+      "game_003",
+      "game_001",
+      "game_002",
+      "game_003",
+      "game_001",
+      "game_002",
+      "game_003",
+      "game_001",
+      "game_002",
+      "game_003"
+    ],
+    "videos": [
+      {
+        "title": "Intro to Alpha Org",
+        "url": "https://www.alphaorg.com/intro-video"
+      },
+      {
+        "title": "Alpha Org Hackathon Highlights",
+        "url": "https://www.alphaorg.com/hackathon-2023"
+      }
+    ],
+    "resources": [
+      {
+        "title": "Getting Started Guide",
+        "desc": "A comprehensive guide to get started with Alpha Org's platform.",
+        "url": "https://www.alphaorg.com/resources/getting-started"
+      },
+      {
+        "title": "API Documentation",
+        "desc": "Detailed API docs for developers.",
+        "url": "https://www.alphaorg.com/resources/api-docs"
+      }
+    ],
+    "assets": {
+      "banner": "https://www.thelaunchpad.org/wp-content/uploads/2023/10/main-page-umthlp-scaled.jpg",
+      "mainPic": "https://www.thelaunchpad.org/wp-content/uploads/2018/08/orange-rocket-60x60.png",
+      "smallPic": "https://www.alphaorg.com/assets/small.jpg"
+    },
+    "about": [
+      "Alpha Org is a leading innovator in technology.",
+      "Our mission is to empower creators with cutting-edge tools.",
+      "Join us to explore the future of possibilities."
+    ],
+    "links": [
+      { "title": "Website", "url": "https://thelaunchpad.org/" },
+      { "title": "Twitter", "url": "https://twitter.com/thelaunchpad" }
+    ]
+  }
+]

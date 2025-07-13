@@ -1,0 +1,48 @@
+.MuiCalendarPicker-root{
+    width: 100% !important;
+    height: 82vh !important;
+    max-height: 100vh !important;
+}
+
+.MuiPickersCalendarHeader-label {
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width: 600px) {
+    .MuiPickersCalendarHeader-label {
+      font-size: 2em;
+    }
+  }
+@media (max-width: 400px) {
+    .MuiPickersCalendarHeader-label {
+      font-size: 1rem;
+    }
+}
+
+.MuiCalendarPicker-viewTransitionContainer{
+    height: 100vh !important;
+    display: flex !important;
+}
+
+.MuiCalendarPicker-viewTransitionContainer > div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.MuiCalendarPicker-viewTransitionContainer > div > div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.MuiDayPicker-weekContainer {
+    justify-content: space-between;
+}
+.PrivatePickersSlideTransition-root {
+    flex:1;
+}
+
+.MuiDayPicker-header {
+    justify-content: space-around !important;
+}

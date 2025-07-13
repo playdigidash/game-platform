@@ -1,0 +1,18 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+
+@mixin default-vertical-center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex:1
+}
+
+.badge-with-text-container {
+    @include default-vertical-center-container
+} 

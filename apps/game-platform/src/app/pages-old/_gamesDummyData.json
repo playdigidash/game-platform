@@ -1,0 +1,234 @@
+[
+  {
+    "id": "game_001",
+    "title": "Innovation Guru",
+    "description": "Test your knowledge about the world of startups, entrepreneurship, and innovation with a series of fun trivia questions.",
+    "playUrl": "/launchship",
+    "imgUrl": "https://www.indiafilings.com/learn/wp-content/uploads/2023/02/What-is-a-startup-business.jpg",
+    "numOfQuestions": 20,
+    "featured": true,
+    "category": "Startup",
+    "color": "darkorange"
+  },
+  {
+    "id": "game_003",
+    "title": "Thinking with Ideas",
+    "description": "Challenge your problem-solving skills with trivia questions related to creative brainstorming, innovation, and idea generation.",
+    "playUrl": "/tlpnew",
+    "imgUrl": "https://i0.wp.com/vocean.com/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-05-09.25.02-People-brainstorming-with-ideas-infront-of-them.-no-faces-or-hands.png",
+    "numOfQuestions": 25,
+    "featured": true,
+    "category": "Brainstorming",
+    "color": "darkblue"
+  },
+  {
+    "id": "game_008",
+    "title": "UM Resources Trivia",
+    "description": "Test your knowledge about the University of Miami’s resources, research, and innovations through a fun and engaging trivia game.",
+    "playUrl": "/underlineoolite",
+    "imgUrl": "https://s3-eu-west-1.amazonaws.com/lodgerin-app-production/statics/assets/images/universities/miami-university-cover-94906a3560745bc8a46a1dd78f23219d.webp",
+    "numOfQuestions": 22,
+    "featured": true,
+    "category": "UM Resources",
+    "color": "darkcyan"
+  },
+  {
+    "id": "game_004",
+    "title": "Brainwave Battle",
+    "description": "Challenge your mind with logic puzzles and brain teasers to enhance your problem-solving skills.",
+    "playUrl": "https://www.example.com/games/brainwave-battle",
+    "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ92xMacMwGnZh2OT9TGaAffWxqrR6MYqR1nWG9ma6KNY_xbW2PBDOY9XBQhoWzLzzK35o&usqp=CAU",
+    "numOfQuestions": 18,
+    "featured": false,
+    "category": "Brainstorming",
+    "color": "darkgreen"
+  },
+  {
+    "id": "game_005",
+    "title": "Legal Eagle",
+    "description": "Test your knowledge of law by solving real-world legal challenges and court cases.",
+    "playUrl": "https://www.example.com/games/legal-eagle",
+    "imgUrl": "https://www.lawentrance.com/img/legal-process-outsourcing.webp",
+    "numOfQuestions": 20,
+    "featured": false,
+    "category": "Legal",
+    "color": "darkred"
+  },
+  {
+    "id": "game_006",
+    "title": "Venture Vision",
+    "description": "Build your dream startup and manage investment rounds to succeed in the competitive startup world.",
+    "playUrl": "https://www.example.com/games/venture-vision",
+    "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhxGdODyZq0OJ4hdosdMIFolPFirFTOI6xCA&s",
+    "numOfQuestions": 25,
+    "featured": false,
+    "category": "Startup",
+    "color": "darkblue"
+  },
+  {
+    "id": "game_007",
+    "title": "Investor's Playground",
+    "description": "Sharpen your funding skills and learn to secure investments by pitching your business to investors.",
+    "playUrl": "https://www.example.com/games/investors-playground",
+    "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWldC0im3AcxHaipZlqFs9u7XwXv5fmLunAA&s",
+    "numOfQuestions": 30,
+    "featured": false,
+    "category": "Funding",
+    "color": "black"
+  },
+
+  {
+    "id": "game_009",
+    "title": "Startup Strategy",
+    "description": "Compete against other teams to scale your startup and achieve business success.",
+    "playUrl": "https://www.example.com/games/startup-strategy",
+    "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiE222kvVZRxtJUZLkCdS-hp0nlywN3WhHGQ&s",
+    "numOfQuestions": 19,
+    "featured": false,
+    "category": "Startup",
+    "color": "black"
+  },
+  {
+    "id": "game_010",
+    "title": "Pitch Perfect",
+    "description": "Learn how to pitch your ideas to investors and secure the funding you need.",
+    "playUrl": "https://www.example.com/games/pitch-perfect",
+    "imgUrl": "https://nanotempertech.com/wp-content/uploads/2020/04/Funding-Featured-Image.png",
+    "numOfQuestions": 23,
+    "featured": false,
+    "category": "Funding",
+    "color": "indigo"
+  },
+  {
+    "id": "game_011",
+    "title": "QuizMaster",
+    "description": "Answer trivia questions from different fields like history, science, and technology.",
+    "playUrl": "https://www.example.com/games/quizmaster",
+    "imgUrl": "https://www.proofhub.com/articles/wp-content/uploads/2017/04/Brainstorming-Techniques-to-Produce-Powerful-Ideas.jpg",
+    "numOfQuestions": 40,
+    "featured": false,
+    "category": "Brainstorming",
+    "color": "teal"
+  },
+  {
+    "id": "game_013",
+    "title": "Legal Legends",
+    "description": "Test your legal knowledge by answering tough questions from real-world law cases.",
+    "playUrl": "https://www.example.com/games/legal-legends",
+    "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtNmHoRk6Id4giqY0WzSGwFdUt5njzPZiZ1g&s",
+    "numOfQuestions": 35,
+    "featured": false,
+    "category": "Legal",
+    "color": "darkgreen"
+  },
+  {
+    "id": "game_014",
+    "title": "City Builder",
+    "description": "Create your ideal city by designing infrastructure and managing resources efficiently.",
+    "playUrl": "https://www.example.com/games/city-builder",
+    "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlG6AA6f8bG8lDOtOOFXl4Xpsgqr7NHEcQww&s",
+    "numOfQuestions": 28,
+    "featured": false,
+    "category": "Brainstorming",
+    "color": "darkgrey"
+  },
+  {
+    "id": "game_015",
+    "title": "Hacker's Quest",
+    "description": "Solve cybersecurity challenges and protect networks from cyber attacks.",
+    "playUrl": "https://www.example.com/games/hackers-quest",
+    "imgUrl": "https://www.sevenstepswriting.com/wp-content/uploads/2021/04/Student-Brainstorming-Ideas-Illustration-850-x-550px.png",
+    "numOfQuestions": 40,
+    "featured": false,
+    "category": "Brainstorming",
+    "color": "black"
+  },
+  {
+    "id": "game_016",
+    "title": "Startup Tycoon",
+    "description": "Create and manage a startup from the ground up to become the next big tech company.",
+    "playUrl": "https://www.example.com/games/startup-tycoon",
+    "imgUrl": "https://media.licdn.com/dms/image/D4E12AQHWj4QNlSrCqw/article-cover_image-shrink_720_1280/0/1713279007269?e=2147483647&v=beta&t=HOzoJRTsVJCBj4zyMpQWsUgYGqZ2kUHEaH4oH5TkhzY",
+    "numOfQuestions": 15,
+    "featured": false,
+    "category": "Startup",
+    "color": "indigo"
+  },
+  {
+    "id": "game_018",
+    "title": "Innovation Lab",
+    "description": "Test your innovative thinking skills by solving challenges related to technology and business.",
+    "playUrl": "https://www.example.com/games/innovation-lab",
+    "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN_dkoYPiJlFgSt4ocY4V1KvUaQ0JA51uZ3w&s",
+    "numOfQuestions": 18,
+    "featured": false,
+    "category": "UM Resources",
+    "color": "darkcyan"
+  },
+  {
+    "id": "game_019",
+    "title": "Law School",
+    "description": "Prepare for your law school exams with practice questions covering various legal topics.",
+    "playUrl": "https://www.example.com/games/law-school",
+    "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAw5lTeOHk6Ib-qu4r0D--MDvYSXqwYvXZAw&s",
+    "numOfQuestions": 50,
+    "featured": false,
+    "category": "Legal",
+    "color": "darkred"
+  },
+  {
+    "id": "game_020",
+    "title": "The Investor's Room",
+    "description": "Learn about investment strategies and how to secure capital for your startup in a fun game.",
+    "playUrl": "https://www.example.com/games/investors-game",
+    "imgUrl": "https://researchresearch-news-wordpress-media-live.s3.eu-west-1.amazonaws.com/2019/10/hand_balance_money_lightbulb-738x443.jpg",
+    "numOfQuestions": 32,
+    "featured": false,
+    "category": "Funding",
+    "color": "darkblue"
+  },
+  {
+    "id": "game_022",
+    "title": "Legal Brain",
+    "description": "Test your knowledge of international law and legal frameworks in various scenarios.",
+    "playUrl": "https://www.example.com/games/legal-brain",
+    "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjz6b72B7y9sj4vFn2Cqf7UHa-F-iet47N3w&s",
+    "numOfQuestions": 45,
+    "featured": false,
+    "category": "Legal",
+    "color": "purple"
+  },
+  {
+    "id": "game_024",
+    "title": "City Master",
+    "description": "Design the best city with efficient layouts, smart transportation, and sustainable living.",
+    "playUrl": "https://www.example.com/games/city-master",
+    "imgUrl": "https://venngage-wordpress.s3.amazonaws.com/uploads/2023/09/image-32.png",
+    "numOfQuestions": 25,
+    "featured": false,
+    "category": "Brainstorming",
+    "color": "darkgray"
+  },
+  {
+    "id": "game_026",
+    "title": "Lawyer's Lab",
+    "description": "Solve challenging legal problems in a virtual law firm with real-world cases.",
+    "playUrl": "https://www.example.com/games/lawyers-lab",
+    "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs_5DMJnCJBctjymFYdEIlskATpEJMyep8Uw&s",
+    "numOfQuestions": 40,
+    "featured": false,
+    "category": "Legal",
+    "color": "maroon"
+  },
+  {
+    "id": "game_027",
+    "title": "Innovation Nation",
+    "description": "Solve puzzles and build your own innovation hub to revolutionize the future.",
+    "playUrl": "https://www.example.com/games/innovation-nation",
+    "imgUrl": "https://media.gettyimages.com/id/458957939/photo/richter-library-and-clock-tower-at-university-of-miami.jpg?s=612x612&w=gi&k=20&c=pZXENvX5XtzLhMlhTP37I00v7iooqljHx4J-hhGZtpE=",
+    "numOfQuestions": 33,
+    "featured": false,
+    "category": "UM Resources",
+    "color": "darkslategray"
+  }
+]

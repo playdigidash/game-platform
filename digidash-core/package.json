@@ -1,0 +1,47 @@
+{
+  "name": "digidash-core",
+  "version": "1.0.0",
+  "description": "Open source 3D educational trivia game engine",
+  "private": true,
+  "license": "BSL-1.1",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "dev": "npm run dev --workspaces",
+    "clean": "npm run clean --workspaces",
+    "test": "npm test --workspaces",
+    "lint": "eslint packages/*/src examples/*/src --ext .ts,.tsx",
+    "format": "prettier --write \"packages/*/src/**/*.{ts,tsx}\" \"examples/*/src/**/*.{ts,tsx}\"",
+    "release": "npm run build && npm publish --workspaces"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "eslint": "^8.50.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.2.0",
+    "lerna": "^7.4.0"
+  },
+  "keywords": [
+    "trivia",
+    "education",
+    "games",
+    "three.js",
+    "react",
+    "3d",
+    "open-source"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digidash/digidash-core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/digidash/digidash-core/issues"
+  },
+  "homepage": "https://github.com/digidash/digidash-core#readme"
+}

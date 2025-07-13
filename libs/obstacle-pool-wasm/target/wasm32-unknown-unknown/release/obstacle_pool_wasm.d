@@ -1,0 +1,1 @@
+/Users/lamarwork/repos/lvwebapp-mono-repo/libs/obstacle-pool-wasm/target/wasm32-unknown-unknown/release/obstacle_pool_wasm.wasm: /Users/lamarwork/repos/lvwebapp-mono-repo/libs/obstacle-pool-wasm/src/lib.rs

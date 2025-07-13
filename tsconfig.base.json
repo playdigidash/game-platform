@@ -1,0 +1,33 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@digidash/minigames": ["libs/minigames/src/index.ts"],
+      "@lidvizion/Search": ["libs/search/src/index.ts"],
+      "@lidvizion/award": ["libs/award/src/index.ts"],
+      "@lidvizion/commonlib": ["libs/commonlib/src/index.ts"],
+      "@lidvizion/login": ["libs/login/src/index.ts"],
+      "@lidvizion/obstacle-pool-wasm": ["libs/obstacle-pool-wasm/dist"],
+      "@lidvizion/react-mui-calendar": ["libs/calendar/src/index.ts"],
+      "@lidvizion/temp": ["libs/temp/src/index.ts"],
+      "@lidvizion/topbar": ["libs/topbar/src/index.ts"],
+      "@lidvizion/ui": ["libs/ui/src/index.ts"],
+      "@lidvzion/mongo-lambda-ses": ["libs/aws/src/index.ts"],
+      "@lvwebapp-mono-repo/ui": ["libs/ui/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

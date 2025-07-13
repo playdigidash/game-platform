@@ -1,0 +1,34 @@
+[package]
+name = "obstacle-pool-wasm"
+version = "0.1.0"
+edition = "2021"
+
+# Disable wasm-opt to avoid download issues
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2.89"
+js-sys = "0.3.67"
+serde = { version = "1.0", features = ["derive"] }
+serde-wasm-bindgen = "0.6.3"
+console_error_panic_hook = "0.1.7"
+getrandom = { version = "0.2", features = ["js"] }
+rand = "0.8.5"
+
+[dependencies.web-sys]
+version = "0.3.67"
+features = [
+  "console",
+]
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3.39"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1 

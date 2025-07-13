@@ -1,0 +1,11 @@
+@media only screen and (max-width: 600px) {
+    .login-components-wrapper{
+        flex-direction: column-reverse;
+        display: flex;
+    }
+}
+
+.login-components-wrapper{
+    display: flex;
+    flex-grow: 1;
+}

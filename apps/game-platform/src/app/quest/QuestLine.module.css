@@ -1,0 +1,420 @@
+/* apps/game-platform/src/app/components/QuestLine/QuestLine.module.css */
+
+/* Base Variables */
+:root {
+    /* Sizes */
+    --quest-node-size: 6rem;
+    --quest-node-border: 0.125rem;
+    --quest-connector-width: 3rem;
+    --quest-connector-height: 0.125rem;
+    --quest-container-gap: 1.5rem;
+    --quest-ring-size: calc(var(--quest-node-size) + 1.5rem);
+    
+    /* Colors - These will be overridden by theme */
+    --quest-primary: #8b5cf6;
+    --quest-primary-glow: rgba(139, 92, 246, 0.9);
+    --quest-secondary: #ec4899;
+    --quest-secondary-glow: rgba(236, 72, 153, 0.9);
+    
+    /* Glow Strengths */
+    --glow-intensity-low: 0.75rem;
+    --glow-intensity-medium: 1.25rem;
+    --glow-intensity-high: 3rem;
+  
+    --quest-trophy-color: #ffd700;
+    --quest-trophy-glow: rgba(255, 215, 0, 0.9);
+  }
+  
+  /* Main Container */
+  .questLineMainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 5rem 2rem; /* Increased padding for glow and helper text */
+    position: relative;
+    overflow: visible; /* Allow glow effects to show */
+  }
+  
+  /* Quest Line Container */
+  .questLineContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: var(--quest-container-gap);
+    width: 100%; 
+    max-width: 100%; /* Ensure it doesn't exceed parent */
+    padding: 2rem 0.5rem 1rem 0.5rem; /* Added top padding for helper text */
+    overflow: visible; /* Allow glow effects to show */
+    flex-wrap: nowrap; /* Prevent wrapping */
+  }
+  
+  /* Individual Quest Step Container */
+  .questStepContainer {
+    display: flex;
+    align-items: center;
+    gap: var(--quest-container-gap);
+    position: relative;
+    flex-shrink: 1; /* Allow shrinking */
+    min-width: 0; /* Allow shrinking below content size */
+  }
+  
+  /* Node Wrapper */
+  .questNodeWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: var(--quest-node-size);
+    height: var(--quest-node-size);
+    margin: 0 var(--quest-node-wrapper-margin, 0.5rem); 
+    flex-shrink: 0; /* Don't shrink the nodes themselves */
+  }
+  
+  /* Helper Text Container */
+  .questHelperContainer {
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  /* Start Button Styling */
+  .questStartButton {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0.375rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    white-space: nowrap;
+    font-family: inherit;
+  }
+  
+  /* Helper Arrow - Always dark */
+  .questHelperArrow {
+    width: 0;
+    height: 0;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    border-top: 0.75rem solid rgba(0, 0, 0, 0.8);
+    filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.5));
+  }
+  
+  /* Node Base Styles */
+  .questNode {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+    transition: all 0.3s ease;
+    position: relative;
+    background: transparent;
+    box-shadow: none;
+    --current-glow-color: transparent;
+  }
+
+  /* Icon Container for better scaling */
+  .questIconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* SVG Icons - General Sizing */
+  .questIconContainer svg {
+    font-size: 3rem;
+    color: white; 
+    flex-shrink: 0;
+  }
+  
+  /* Specific for Available Node Icons */
+  .questNodeAvailable .questIconContainer svg {
+    font-size: 3.25rem; 
+  }
+  
+  /* Trophy Icon SVG Styling */
+  .trophyIcon {
+    width: 3.5rem;
+    height: 3.5rem;
+    filter: drop-shadow(0 0 0.6rem rgba(255, 255, 255, 0.7));
+    flex-shrink: 0;
+  }
+  
+  .trophyIcon path {
+    fill: var(--quest-trophy-color);
+  }
+  
+  /* Completed Node Icon Styling */
+  .questNodeCompleted .questIconContainer svg {
+    filter: drop-shadow(0 0 0.3125rem rgba(255, 255, 255, 0.7));
+  }
+  
+  /* Locked Node Icon Styling */
+  .questNodeLocked .questIconContainer svg {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Gradient Border (Ring) using ::before */
+  .questNode::before {
+    content: '';
+    position: absolute;
+    inset: -0.25rem;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--quest-secondary), var(--quest-primary));
+    mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    opacity: 0; 
+    z-index: -1;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Available Node - Shows ring, background, glow, and pointer cursor */
+  .questNodeAvailable {
+    transform: scale(1.1);
+    background: rgba(255,255,255,0.05);
+    box-shadow: 
+      inset 0 0 0.1875rem rgba(0,0,0,0.4),
+      0 0 var(--glow-intensity-medium) var(--current-glow-color);
+    --current-glow-color: var(--quest-primary-glow);
+    animation: pulseNodeGlow 2s ease-in-out infinite;
+    cursor: pointer;
+  }
+  
+  /* Available Node Ring */
+  .questNodeAvailable::before {
+    opacity: 1;
+  }
+  
+  /* Completed Node - Simple checkmark, no special effects */
+  .questNodeCompleted {
+    cursor: default;
+    background: rgba(255,255,255,0.02);
+  }
+  
+  .questNodeCompleted::before {
+    opacity: 0;
+  }
+  
+  /* Locked Node - Greyed out appearance */
+  .questNodeLocked {
+    cursor: default;
+    opacity: 0.4;
+  }
+  
+  .questNodeLocked::before {
+    opacity: 0;
+  }
+  
+  /* Retry Node - Special styling for when quest is completed and can be retried */
+  .questNodeRetry {
+    transform: scale(1.15);
+    background: rgba(255, 165, 0, 0.1); /* Orange background for retry */
+    box-shadow: 
+      inset 0 0 0.1875rem rgba(0,0,0,0.4),
+      0 0 var(--glow-intensity-high) rgba(255, 165, 0, 0.8);
+    --current-glow-color: rgba(255, 165, 0, 0.8);
+    animation: pulseRetryGlow 2s ease-in-out infinite;
+    cursor: pointer;
+  }
+  
+  /* Retry Node Ring - Orange gradient */
+  .questNodeRetry::before {
+    background: linear-gradient(135deg, #ff8c00, #ffa500);
+    opacity: 1;
+  }
+  
+  /* Retry pulse animation - distinctive from available */
+  @keyframes pulseRetryGlow {
+    0% { 
+      box-shadow: inset 0 0 0.1875rem rgba(0,0,0,0.4), 0 0 var(--glow-intensity-medium) rgba(255, 165, 0, 0.8);
+      transform: scale(1.15);
+    }
+    50% { 
+      box-shadow: inset 0 0 0.1875rem rgba(0,0,0,0.4), 0 0 var(--glow-intensity-high) rgba(255, 165, 0, 1);
+      transform: scale(1.2);
+    }
+    100% { 
+      box-shadow: inset 0 0 0.1875rem rgba(0,0,0,0.4), 0 0 var(--glow-intensity-medium) rgba(255, 165, 0, 0.8);
+      transform: scale(1.15);
+    }
+  }
+  
+  /* Trophy Node Specifics */
+  .questNodeTrophy.questNodeAvailable {
+    background: rgba(255, 215, 0, 0.1);
+    box-shadow: 
+      inset 0 0 0.1875rem rgba(0,0,0,0.4),
+      0 0 var(--glow-intensity-high) var(--quest-trophy-glow);
+    --current-glow-color: var(--quest-trophy-glow);
+    cursor: pointer;
+  }
+  
+  /* Trophy Node Ring - Gold when available */
+  .questNodeTrophy.questNodeAvailable::before {
+    background: linear-gradient(135deg, #ffd700, #ffed4e);
+    opacity: 1;
+  }
+  
+  /* Trophy Node when locked - Grey trophy */
+  .questNodeTrophy.questNodeLocked .trophyIcon {
+    filter: grayscale(1) opacity(0.5);
+  }
+  
+  .questNodeTrophy.questNodeLocked .trophyIcon path {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Connector Line */
+  .questConnector {
+    height: var(--quest-connector-height);
+    width: var(--quest-connector-width);
+    background: linear-gradient(to right, var(--quest-secondary), var(--quest-primary)); 
+    position: relative;
+    flex-shrink: 0;
+  }
+  
+  .questConnector::after {
+    content: '';
+    position: absolute;
+    inset: -0.25rem;
+    background: inherit;
+    filter: blur(0.25rem);
+    opacity: 0.5;
+  }
+  
+  .questConnectorLocked {
+    opacity: 0.3;
+  }
+  
+  /* Animations */
+  @keyframes pulseNodeGlow {
+    0% { box-shadow: inset 0 0 0.1875rem rgba(0,0,0,0.4), 0 0 var(--glow-intensity-medium) var(--current-glow-color); }
+    50% { box-shadow: inset 0 0 0.1875rem rgba(0,0,0,0.4), 0 0 var(--glow-intensity-high) var(--current-glow-color); }
+    100% { box-shadow: inset 0 0 0.1875rem rgba(0,0,0,0.4), 0 0 var(--glow-intensity-medium) var(--current-glow-color); }
+  }
+  
+  /* Media Query for smaller screens */
+  @media (max-width: 768px) { 
+    :root {
+      --quest-container-gap: 1rem; 
+      --quest-connector-width: 2rem; 
+      --quest-node-size: 5rem;
+    }
+    .questNodeWrapper {
+      margin: 0 var(--quest-node-wrapper-margin-small, 0.25rem); 
+    }
+    .questLineMainContainer {
+      padding: 4rem 1rem; /* Maintain padding for glow effects */
+      max-width: 100vw; /* Ensure it doesn't exceed viewport */
+    }
+    .questLineContainer {
+      padding: 1.5rem 0.25rem 0.5rem 0.25rem; /* Maintain top padding */
+      gap: var(--quest-container-gap);
+    }
+    .questHelperContainer {
+      top: -3rem; /* Adjust for smaller nodes */
+    }
+    /* Icons scale down slightly for better fit */
+    .questIconContainer svg {
+      font-size: 2.5rem;
+    }
+    .questNodeAvailable .questIconContainer svg {
+      font-size: 2.75rem;
+    }
+    .trophyIcon {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+  
+  @media (max-width: 480px) { 
+    :root {
+      --quest-node-size: 4.5rem;
+      --quest-container-gap: 0.75rem; 
+      --quest-connector-width: 1.5rem;
+    }
+    .questNodeWrapper {
+      margin: 0 var(--quest-node-wrapper-margin-xsmall, 0.125rem); 
+    }
+     .questLineMainContainer {
+      padding: 3.5rem 0.5rem; /* Maintain padding for glow effects */
+      max-width: 100vw;
+    }
+    .questLineContainer {
+      padding: 1.25rem 0.125rem 0.25rem 0.125rem; /* Maintain top padding */
+      gap: var(--quest-container-gap);
+    }
+    .questHelperContainer {
+      top: -2.75rem; /* Adjust for smaller nodes */
+    }
+    /* Icons scale down more for mobile */
+    .questIconContainer svg {
+      font-size: 2rem;
+    }
+    .questNodeAvailable .questIconContainer svg {
+      font-size: 2.25rem;
+    }
+    .trophyIcon {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    .questHelperArrow {
+      border-left-width: 0.375rem;
+      border-right-width: 0.375rem;
+      border-top-width: 0.5rem;
+    }
+  }
+
+  @media (max-width: 360px) {
+    :root {
+      --quest-node-size: 4rem;
+      --quest-container-gap: 0.5rem; 
+      --quest-connector-width: 1rem;
+    }
+    .questNodeWrapper {
+      margin: 0 0.0625rem; 
+    }
+    .questLineMainContainer {
+      padding: 3rem 0.25rem; /* Maintain padding for glow effects */
+      max-width: 100vw;
+    }
+    .questLineContainer {
+      padding: 1rem 0.0625rem 0.25rem 0.0625rem; /* Maintain top padding */
+      gap: var(--quest-container-gap);
+    }
+    .questHelperContainer {
+      top: -2.5rem; /* Adjust for smaller nodes */
+    }
+    /* Icons scale down further for very small screens */
+    .questIconContainer svg {
+      font-size: 1.75rem;
+    }
+    .questNodeAvailable .questIconContainer svg {
+      font-size: 2rem;
+    }
+    .trophyIcon {
+      width: 2rem;
+      height: 2rem;
+    }
+  } 

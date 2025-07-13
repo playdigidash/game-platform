@@ -1,0 +1,25 @@
+yarn run v1.22.17
+$ nx serve
+
+> nx run lvwebapp:serve:development
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+<i> [webpack-dev-server] Project is running at:
+<i> [webpack-dev-server] Loopback: http://localhost:4200/, http://[::1]:4200/
+<i> [webpack-dev-server] 404s will fallback to '/index.html'
+
+>  NX  Web Development Server is listening at http://localhost:4200/
+
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 35 MiB (35.4 MiB) = [1m[32mruntime.js[39m[22m 56.3 KiB [1m[32mvendor.js[39m[22m 32.2 MiB [1m[32mmain.css[39m[22m 179 bytes [1m[32mmain.js[39m[22m 2.77 MiB 61 auxiliary assets
+Entrypoint [1mpolyfills[39m[22m [1m[33m[big][39m[22m 824 KiB (997 KiB) = [1m[32mruntime.js[39m[22m 56.3 KiB [1m[32mpolyfills.js[39m[22m 768 KiB 2 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 465 KiB (571 KiB) = [1m[32mruntime.js[39m[22m 56.3 KiB [1m[32mstyles.css[39m[22m 636 bytes [1m[32mstyles.js[39m[22m 408 KiB 2 auxiliary assets
+chunk (runtime: runtime) [1m[32mlibs_commonlib_src_lib_editor_nodes_ImageComponent_tsx.js[39m[22m 3.17 KiB [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m (main) 2.27 MiB (javascript) 930 KiB (asset) 142 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mpolyfills.js[39m[22m (polyfills) 715 KiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m (runtime) 37.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 387 KiB (javascript) 635 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 28.6 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (7b12025e4ab461f3)
+No issues found.

@@ -1,0 +1,18 @@
+{
+  "name": "@lidvizion/obstacle-pool-wasm",
+  "version": "0.1.0",
+  "description": "Rust-powered obstacle pool for improved performance",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "wasm-pack build --target web --out-dir pkg && tsc",
+    "clean": "rm -rf dist pkg",
+    "prebuild": "npm run clean",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "typescript": "~4.7.2",
+    "wasm-pack": "^0.12.1"
+  }
+}

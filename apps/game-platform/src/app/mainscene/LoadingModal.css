@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+/* BASIC MODAL STYLES */
+.loading-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #121212; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 9999;
+  padding: 5vh 1rem;
+}
+
+/* TITLE STYLES */
+.title-container {
+  margin-bottom: 2vh;
+  width: 100%;
+  max-width: 90%;
+  animation: swooshIn 2s ease-out forwards;
+}
+
+.title {
+  color: white;
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  font-family: 'Orbitron', sans-serif;
+  animation: glowPulse 2s infinite;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #FFFFFF 0%, #CCCCCC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 0.5rem rgba(255,255,255,0.3));
+  text-align: center;
+  margin: 0;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+/* LOGO CONTAINER FOR THE SWOOSH ANIMATION */
+.logo-container {
+  position: relative;
+  width: min(30vh, 90vw);
+  height: min(30vh, 90vw);
+  animation: swooshIn 2s ease-out forwards;
+  margin: 2vh 0 4vh 0;
+}
+
+/* LOGO SCALING */
+.logo {
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  animation: logoScale 0.8s 0.2s forwards ease-out;
+  object-fit: contain;
+}
+
+/* TRAIL EFFECT */
+.trail {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  background: radial-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0) 70%);
+  opacity: 0;
+  animation: trailAnimation 2s 0.2s forwards ease-out;
+}
+
+/* TIPS CONTAINER */
+.tips-container {
+  color: #fff;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  width: 100%;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.tip {
+  padding: 0.8em 1em;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  transform: translateY(1rem);
+  opacity: 0;
+  font-size: clamp(1.2rem, 3.5vw, 2rem);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  line-height: 1.3;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tip:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.tip.show {
+  animation: tipReveal 0.5s forwards ease-out;
+}
+
+/* KEYFRAMES */
+@keyframes glowPulse {
+  0% { text-shadow: 0 0 0.5rem rgba(255,255,255,0.5), 0 0 1rem rgba(255,255,255,0.3); }
+  50% { text-shadow: 0 0 1rem rgba(255,255,255,0.8), 0 0 1.5rem rgba(255,255,255,0.5); }
+  100% { text-shadow: 0 0 0.5rem rgba(255,255,255,0.5), 0 0 1rem rgba(255,255,255,0.3); }
+}
+
+@keyframes swooshIn {
+  0% {
+    transform: translateX(-100%) rotate(-20deg);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(10%) rotate(0deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes logoScale {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes trailAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+
+@keyframes tipReveal {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+} 
