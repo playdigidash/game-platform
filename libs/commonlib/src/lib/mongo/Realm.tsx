@@ -1,7 +1,7 @@
 import * as RealmWeb from 'realm-web';
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { observer } from 'mobx-react';
-import jwtDecode from 'jwt-decode';
+import { jwtDecode } from 'jwt-decode';
 import { subscribeToNotifications } from './MongoQueries';
 import { CurrEnvironment } from '../common';
 import { MongoDBRealmError, User } from 'realm-web';

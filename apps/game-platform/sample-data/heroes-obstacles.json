@@ -1,0 +1,255 @@
+[{
+    "_id": {
+      "$oid": "678fe0be3d7c0cb5584bce61"
+    },
+    "objId": "7fb2cba4-3aee-4250-b9d5-46dd9d497aad",
+    "uid": "6825371c8cd5d8b732391256",
+    "objExt": "glb",
+    "fName": "monkeymanglb.glb",
+    "name": "Monkey Man",
+    "fileSize": 763820,
+    "uploadedAt": "2025-01-21T18:00:30.231Z",
+    "lstMod": "2025-01-21T18:00:30.231Z",
+    "type": "custom",
+    "thumbnail": "6eddcb63-e246-428b-a4b2-e142897a5345",
+    "thumbnailUrl": "6825371c8cd5d8b732391256/6eddcb63-e246-428b-a4b2-e142897a5345.png",
+    "title": "Monkey Man",
+    "description": "A playful monkey dressed as a jungle adventurer.",
+    "recUse": "hero",
+    "catId": [
+      "04e67945-4d54-4e75-8c12-41ce2e979f0b"
+    ],
+    "isPublic": true
+  },
+  {
+    "_id": {
+      "$oid": "678aa5f49303b42c8e6c7475"
+    },
+    "objId": "ca4b3623-6afa-4019-b1f2-67fc3be7c20f",
+    "uid": "6825371c8cd5d8b732391256",
+    "objExt": "glb",
+    "fName": "Metallic_Bridge_Frame_0117085315_texture.glb",
+    "name": "",
+    "fileSize": 2035060,
+    "uploadedAt": "2025-01-17T18:48:20.401Z",
+    "lstMod": "2025-01-17T18:48:20.401Z",
+    "type": "custom",
+    "thumbnail": "edb466da-02af-48e2-bb8d-704dfc0ddb3a",
+    "thumbnailUrl": "6825371c8cd5d8b732391256/edb466da-02af-48e2-bb8d-704dfc0ddb3a.png",
+    "title": "Steel Arch Bridge",
+    "description": "A sturdy steel arch bridge, providing a solid crossing over a gap or river.",
+    "recUse": "jump",
+    "catId": [
+      "c3f56288-5f8c-46a9-afc9-f4dee3d28cf4"
+    ],
+    "funFacts": [
+      {
+        "fact": "First steel arch bridge: Eads Bridge, built in 1874."
+      },
+      {
+        "fact": "Sydney Harbour Bridge's nickname is 'The Coathanger' for its shape."
+      }
+    ],
+    "isPublic": true
+  },
+  {
+    "_id": {
+      "$oid": "678aa6128896e4f480c77b71"
+    },
+    "objId": "71afd42f-614a-4d96-8ad2-badf31df7d96",
+    "uid": "6825371c8cd5d8b732391256",
+    "objExt": "glb",
+    "fName": "Neon_Hover_Board_Prom_0117084940_texture.glb",
+    "name": "",
+    "fileSize": 1152924,
+    "uploadedAt": "2025-01-17T18:48:50.557Z",
+    "lstMod": "2025-01-17T18:48:50.557Z",
+    "type": "custom",
+    "thumbnail": "668826fc-b462-4cae-85f1-efa17c1054c7",
+    "thumbnailUrl": "6825371c8cd5d8b732391256/668826fc-b462-4cae-85f1-efa17c1054c7.png",
+    "title": "Neon Hover Disc",
+    "description": "A futuristic floating disc with glowing neon rings, hovering effortlessly in the air.",
+    "recUse": "duck",
+    "catId": [
+      "bf8c894d-c48d-4c28-87e5-3c8f854608dc"
+    ],
+    "funFacts": [
+      {
+        "fact": "Maglev technology allows objects to hover using magnetic forces."
+      },
+      {
+        "fact": "Back to the Future II popularized the idea of hoverboards."
+      }
+    ],
+    "isPublic": true
+  },
+  {
+    "_id": {
+      "$oid": "678aa60bc8a7f074b779c001"
+    },
+    "objId": "f6d88f54-f133-4afa-92c0-e66cb52a4519",
+    "uid": "6825371c8cd5d8b732391256",
+    "objExt": "glb",
+    "fName": "City_Street_Barrier_P_0117085044_texture.glb",
+    "name": "",
+    "fileSize": 1276960,
+    "uploadedAt": "2025-01-17T18:48:43.145Z",
+    "lstMod": "2025-01-17T18:48:43.145Z",
+    "type": "custom",
+    "thumbnail": "1278f5cb-c2d5-46b3-8089-e522e3ae9b8e",
+    "thumbnailUrl": "6825371c8cd5d8b732391256/1278f5cb-c2d5-46b3-8089-e522e3ae9b8e.png",
+    "title": "Construction Barrier",
+    "description": "A bright orange plastic construction barrier used to block off restricted areas.",
+    "recUse": "dodge",
+    "catId": [
+      "c3f56288-5f8c-46a9-afc9-f4dee3d28cf4"
+    ],
+    "funFacts": [
+      {
+        "fact": "Concrete Jersey barriers were developed in the 1950s for highways."
+      },
+      {
+        "fact": "Modern barriers often use plastic and water for easier deployment."
+      }
+    ],
+    "isPublic": true
+  },
+  {
+    "_id": {
+      "$oid": "678fe0b06601d5166c529bf7"
+    },
+    "objId": "fa11155a-41fc-4af5-961d-b3bde4fe8527",
+    "uid": "6825371c8cd5d8b732391256",
+    "objExt": "glb",
+    "fName": "SwordWoman.glb",
+    "name": "Blade Mistress",
+    "fileSize": 2102148,
+    "uploadedAt": "2025-01-21T18:00:16.658Z",
+    "lstMod": "2025-01-21T18:00:16.658Z",
+    "type": "custom",
+    "thumbnail": "da0494d5-2c41-405e-9659-97e5c157fec9",
+    "thumbnailUrl": "6825371c8cd5d8b732391256/da0494d5-2c41-405e-9659-97e5c157fec9.png",
+    "title": "Blade Warrior",
+    "description": "A powerful warrior adorned in silver armor, wielding dual blades.",
+    "recUse": "hero",
+    "catId": [
+      "5c34b781-bb33-47e3-92c5-41d3d1547e2f"
+    ],
+    "isPublic": true
+  },
+  {
+    "_id": {
+      "$oid": "678fe0c098a8d5207d910f1e"
+    },
+    "objId": "e54baf3f-5299-48ce-93a5-73da50487d5b",
+    "uid": "6825371c8cd5d8b732391256",
+    "objExt": "glb",
+    "fName": "monkey.glb",
+    "name": "Cheeky Monkey",
+    "fileSize": 1036124,
+    "uploadedAt": "2025-01-21T18:00:32.002Z",
+    "lstMod": "2025-01-21T18:00:32.002Z",
+    "type": "custom",
+    "thumbnail": "f81d12d1-6742-4f00-8482-f431e1b03129",
+    "thumbnailUrl": "6825371c8cd5d8b732391256/f81d12d1-6742-4f00-8482-f431e1b03129.png",
+    "title": "Cheeky Monkey",
+    "description": "A playful and mischievous monkey ready for adventure.",
+    "recUse": "hero",
+    "catId": [
+      "04e67945-4d54-4e75-8c12-41ce2e979f0b"
+    ],
+    "isPublic": true
+  },
+  {
+    "_id": {
+      "$oid": "678aa603c8a7f074b779548c"
+    },
+    "objId": "0b129491-a045-45f9-bd6a-c61d05ff2be3",
+    "uid": "6825371c8cd5d8b732391256",
+    "objExt": "glb",
+    "fName": "Spinning_Blade_Disc_P_0117085134_texture.glb",
+    "name": "",
+    "fileSize": 1640380,
+    "uploadedAt": "2025-01-17T18:48:35.257Z",
+    "lstMod": "2025-01-17T18:48:35.257Z",
+    "type": "custom",
+    "thumbnail": "6cdd42c7-58e7-412e-81a5-310c3706d22b",
+    "thumbnailUrl": "6825371c8cd5d8b732391256/6cdd42c7-58e7-412e-81a5-310c3706d22b.png",
+    "title": "Spinning Saw Blade",
+    "description": "A rotating metallic saw blade with glowing orange edges, creating a dangerous hazard.",
+    "recUse": "duck",
+    "catId": [
+      "c3f56288-5f8c-46a9-afc9-f4dee3d28cf4"
+    ],
+    "funFacts": [
+      {
+        "fact": "First circular saw invented by Tabitha Babbitt around 1813."
+      },
+      {
+        "fact": "Modern saw blades spin over 3,000 rotations per minute."
+      }
+    ],
+    "isPublic": true
+  },
+  {
+    "_id": {
+      "$oid": "678aa6077e209e7d5c15de61"
+    },
+    "objId": "eb5da3c3-1a6a-45b8-8c82-20651b572343",
+    "uid": "6825371c8cd5d8b732391256",
+    "objExt": "glb",
+    "fName": "Barrel_of_Spikes_Prom_0117085114_texture.glb",
+    "name": "",
+    "fileSize": 1434952,
+    "uploadedAt": "2025-01-17T18:48:39.194Z",
+    "lstMod": "2025-01-17T18:48:39.194Z",
+    "type": "custom",
+    "thumbnail": "ee7c67aa-f5a7-4cf3-bea8-cbfad6bd8804",
+    "thumbnailUrl": "6825371c8cd5d8b732391256/ee7c67aa-f5a7-4cf3-bea8-cbfad6bd8804.png",
+    "title": "Spiked Barrel",
+    "description": "A reinforced wooden barrel covered with sharp metal spikes, creating a hazardous obstacle.",
+    "recUse": "dodge",
+    "catId": [
+      "8eead2b1-df53-4480-8419-9bf23dc30d81"
+    ],
+    "funFacts": [
+      {
+        "fact": "Barricades with spikes were used since medieval times for defense."
+      },
+      {
+        "fact": "Barrels were invented by Celts and adopted by Romans."
+      }
+    ],
+    "isPublic": true
+  },
+  {
+    "_id": {
+      "$oid": "678aa5ecd7d880b1b44aec71"
+    },
+    "objId": "e4450642-a301-44ba-b8ca-2899d85e076e",
+    "uid": "6825371c8cd5d8b732391256",
+    "objExt": "glb",
+    "fName": "Steel_Girder_Overhang_0117085358_texture.glb",
+    "name": "",
+    "fileSize": 1514372,
+    "uploadedAt": "2025-01-17T18:48:13.016Z",
+    "lstMod": "2025-01-17T18:48:13.016Z",
+    "type": "custom",
+    "thumbnail": "fbf71577-31ce-4382-af20-1c2330707f42",
+    "thumbnailUrl": "6825371c8cd5d8b732391256/fbf71577-31ce-4382-af20-1c2330707f42.png",
+    "title": "Railway Tracks",
+    "description": "A pair of industrial railway tracks used for heavy-duty transport across terrains.",
+    "recUse": "jump",
+    "catId": [
+      "b5c889bb-8167-4149-b487-bee334db6fe0"
+    ],
+    "funFacts": [
+      {
+        "fact": "First steam railway for passengers opened in 1825 in England."
+      },
+      {
+        "fact": "Trans-Siberian Railway spans 5,772 miles, longest single rail line."
+      }
+    ],
+    "isPublic": true
+  }]

@@ -1,0 +1,83 @@
+{
+    "_id": {
+      "$oid": "680162a44cb5b0e80ed2757b"
+    },
+    "coin": "UUID",
+    "dodgeOb": [],
+    "jumpOb": [],
+    "slideOb": [],
+    "scenes": [],
+    "qs": [],
+    "avatars": [
+      "7fb2cba4-3aee-4250-b9d5-46dd9d497aad",
+      "fa11155a-41fc-4af5-961d-b3bde4fe8527",
+      "e54baf3f-5299-48ce-93a5-73da50487d5b"
+    ],
+    "moduleId": "3f437683-a81f-43b4-a41a-a2c38903f00a",
+    "selectedDodge": [
+      "eb5da3c3-1a6a-45b8-8c82-20651b572343",
+      "f6d88f54-f133-4afa-92c0-e66cb52a4519"
+    ],
+    "selectedJump": [
+      "ca4b3623-6afa-4019-b1f2-67fc3be7c20f",
+      "e4450642-a301-44ba-b8ca-2899d85e076e"
+    ],
+    "selectedSlide": [
+      "0b129491-a045-45f9-bd6a-c61d05ff2be3",
+      "71afd42f-614a-4d96-8ad2-badf31df7d96"
+    ],
+    "settings": {
+      "limit": 3,
+      "random": true,
+      "gTitle": "",
+      "gDesc": "",
+      "url": "voad4hz2",
+      "loginLvl": 1,
+      "font": "Inter"
+    },
+    "uid": "66c8bfbe2b67237b18fe43d4",
+    "isDeleted": false,
+    "themeId": "jungle12-2397-44cb-8dbb-87a48aa89999",
+    "createdOn": {
+      "$numberLong": "1744921252184"
+    },
+    "updatedOn": {
+      "$numberLong": "1744921252184"
+    }
+  }
+  
+  Write mongo collection to sort by the avatarsr and selected objects, so we can add that as sample data tooo.
+  
+   "avatars": [
+      "7fb2cba4-3aee-4250-b9d5-46dd9d497aad",
+      "fa11155a-41fc-4af5-961d-b3bde4fe8527",
+      "e54baf3f-5299-48ce-93a5-73da50487d5b"
+    ],
+    "moduleId": "3f437683-a81f-43b4-a41a-a2c38903f00a",
+    "selectedDodge": [
+      "eb5da3c3-1a6a-45b8-8c82-20651b572343",
+      "f6d88f54-f133-4afa-92c0-e66cb52a4519"
+    ],
+    "selectedJump": [
+      "ca4b3623-6afa-4019-b1f2-67fc3be7c20f",
+      "e4450642-a301-44ba-b8ca-2899d85e076e"
+    ],
+    "selectedSlide": [
+      "0b129491-a045-45f9-bd6a-c61d05ff2be3",
+      "71afd42f-614a-4d96-8ad2-badf31df7d96"
+    ],
+    "settings": {
+      "limit": 3,
+      "random": true,
+      "gTitle": "",
+      "gDesc": "",
+      "url": "voad4hz2",
+      "loginLvl": 1,
+      "font": "Inter"
+    },
+    "uid": "66c8bfbe2b67237b18fe43d4",
+    "isDeleted": false,
+    "themeId": "jungle12-2397-44cb-8dbb-87a48aa89999",
+    "createdOn": {
+  
+  

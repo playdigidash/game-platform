@@ -3,7 +3,7 @@
 ## Cloud-Driven Open Source Version
 
 This open source version of the game-platform app is designed to use cloud-hosted versions of the following libraries by default:
-- `@lidvizion/commonlib`
+<!-- - `@lidvizion/commonlib` -->
 - `@lidvizion/login`
 - `@lidvizion/obstacle-pool-wasm`
 
